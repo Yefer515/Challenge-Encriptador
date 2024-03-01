@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #f4f4fc;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+}
+
+.logo{
+    width: 100px;
+    height: 50px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+main{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.almacen-Caja-Texto{
+    position: absolute;
+    left: 50px;
+    top: 90px;
+    padding-left: 90px;
+    width: 800px;
+    height: 500px;
+}
+
+.cajaTexto{
+    width: 80%;
+    height: 100%;
+    border: none;
+    background-color: #f4f4fc;
+    cursor: pointer;
+    color: #0A3871;
+    font-size: 33px;
+    font-weight: 400;
+}
+
+.cajaTexto::placeholder{
+    color: #0A3871;
+}
+
+.alerta{
+    position: absolute;
+    top: 800px;
+    left: 370px;
+    display: flex;
+    color: #495057;
+    text-align: center;
+}
+
+.contenedor-botones{
+    position: absolute;
+    top: 700px;
+    height: 80px;
+    padding-left: 15%;
+    padding-top: 15px;
+ }
+
+ .Boton-Encriptar{
+    width: 228px;
+    height: 55px;
+    border-radius: 24px;
+    background-color: #0A3871;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.Boton-Desencriptar{
+    width: 228px;
+    height: 55px;
+    border-radius: 24px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    border: 2px solid #0A3871;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.parte2{
+    margin-top: auto;
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 750px;
+    right: 50px;
+    padding-right: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+}
+
+.muñeco{
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+.caja-parrafo{
+    position: absolute;
+    box-sizing: border-box;
+    top: 470px;
+    left: 40px;
+ }
+
+ .caja-parrafo h3{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #343A40;
+}
+
+.caja-parrafo p{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #495057;
+    padding-top: 20px;
+}
+
+.caja-Resultado{
+    top: 20px;
+    position: absolute;
+    bottom: 330px;
+    width: 320px;
+    height: 450px;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 25px;
+}
+
+.caja-Resultado p{
+    color: #495057;
+    font-size: 26px;
+}
+
+.caja-copiar{
+    display: flex;
+    position: absolute;
+    bottom: 400px;
+    top: 600px;
+    background-color: aqua;
+    padding-left: 40px;
+}
+
+/* Agregar animación */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicar animación a la clase */
+.texto-resultado.aparecer {
+    animation: aparecer 1s ease-in-out;
+}
+
+.bonton-copiar{
+    width: 228px;
+    height: 55px;
+    border-radius: 24px;
+    background-color: #ffffff;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    position: relative;
+    top: 690px;
+    right: -80px;
+}
+
+.esconder{
+    display: none;
+}
+
+footer{
+    margin-top: auto;
+    text-align: center;
+}
